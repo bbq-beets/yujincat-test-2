@@ -14,4 +14,5 @@ jobs:
   build:
     # The type of runner that the job will run on
     uses: ./.github/workflows/inherit-called.yml
-    secrets: inherit
+    secrets: 
+      test: test
