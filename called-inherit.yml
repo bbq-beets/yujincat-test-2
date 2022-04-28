@@ -1,0 +1,16 @@
+name: inherit called
+on:
+  workflow_call:
+    secrets: 
+      REPO_SECRET:
+        required: false
+  
+jobs:
+  print-secret-ooh:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo  secret REPO_SECRET: ${{ secrets.REPO_SECRET }}
+          echo  secret ORG_SECRET: ${{ secrets.ORG_SECRET }}
+          echo  secret TESTING: ${{ secrets.TESTING }}
+          echo  secret RANDOM: ${{ secrets.RANDOM }} 
