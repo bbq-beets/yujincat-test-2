@@ -4,6 +4,8 @@ on:
     secrets:
       mapping_test: 
         required: false
+      yujincat_repo_secret:
+        required: false
         
 jobs: 
   print_secrets_self-hosted:
